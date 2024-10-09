@@ -7,29 +7,29 @@ public class Main {
         System.out.printf("Hello and welcome!");
         int age = 18;
         if (age >= 18) {
-            System.out.println("Если возраст человека равен 18, то он совершеннолетний");
+            System.out.println("Если возраст человека равен" + age + "то он совершеннолетний");
         } else {
-            System.out.println("Если возраст человека ниже 18, то он не достиг совершеннолетия, нужно немного подождать");
+            System.out.println("Если возраст человека ниже" + age + "то он не достиг совершеннолетия, нужно немного подождать");
         }
 
 
-        int temperature = 5;
+        int temperature = 6;
         if (temperature <= 5) {
-            System.out.println("На улице холодно, нужно одеть шапку");
+            System.out.println("На улице" + temperature + "градусов. На улице холодно, нужно надеть шапку");
         } else {
-            System.out.println("Сегодня тепло, можно идти без шапки");
+            System.out.println("На улице" + temperature + "градусов. Сегодня тепло, можно идти без шапки");
         }
 
 
         int speedLimit = 60;
         if (speedLimit >= 60) {
-            System.out.println("Скорость превышена, если она больше 60 км/ч");
+            System.out.println("Скорость превышена, если она больше" + speedLimit + "км/ч");
         } else {
-            System.out.println("Превышения скорости нет, если она меньше 60 км/ч");
+            System.out.println("Превышения скорости нет, если она меньше" + speedLimit + "км/ч");
         }
 
 
-        int ageHuman = 17;
+        int ageHuman = 24;
         if (ageHuman >= 2 && ageHuman <= 6) {
             System.out.println("Если возраст человека равен" + ageHuman + "то ему нужно ходить в детский сад");
         }
@@ -39,7 +39,7 @@ public class Main {
         if (ageHuman >= 18 && ageHuman <= 24) {
             System.out.println("Если возраст человека равен" + ageHuman + "то ему нужно ходить в университет");
         }
-        if (ageHuman > 25) {
+        if (ageHuman > 24) {
             System.out.println("Если возраст человека равен" + ageHuman + "то ему нужно ходить на работу");
         }
 
@@ -56,34 +56,31 @@ public class Main {
         }
 
 
-        int train = 103;
-        if (train > 102) {
-            System.out.println("мест нет");
-        } else {
-            System.out.println("места есть");
-        }
+        int train = 60;
         if (train >= 0 && train <= 60) {
             System.out.println("Сидячие места есть");
-        } else {
+        }
+        if (train >= 61 && train <= 102) {
             System.out.println("Есть стоящие места");
+        }
+        if (train > 102) {
+            System.out.println("Мест нет");
+        } else {
+            System.out.println("Места есть");
         }
 
 
         int one = 1;
         int two = 2;
-        int three =3;
+        int three = 3;
         if (one > two && one > three) {
             System.out.println("Наибольше число" + one);
-        }
-        if (two > three) {
-            System.out.println("Наибольшее число" + two);
         } else {
-            System.out.println("Наибольшее число" + three);
-        }
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+            if (two > three) {
+                System.out.println("Наибольшее число" + two);
+            } else {
+                System.out.println("Наибольшее число" + three);
+            }
         }
     }
 }
